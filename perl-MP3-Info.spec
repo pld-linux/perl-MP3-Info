@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	MP3
-%define	pnam	Info
+%define		pdir	MP3
+%define		pnam	Info
 Summary:	MP3::Info - manipulate / fetch info from MP3 audio files
 Summary(pl):	MP3::Info - odczyt i operowanie na informacjach z plików d¼wiêkowych MP3
 Name:		perl-MP3-Info
