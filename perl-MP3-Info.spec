@@ -1,3 +1,7 @@
+#
+# Conditional build:
+%bcond_without	tests	# do not perform "make test"
+#
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	MP3
 %define		pnam	Info
@@ -21,7 +25,7 @@ Summary(zh_CN):	MP3::Info Perl Ä£¿é
 Name:		perl-MP3-Info
 Version:	1.02
 Release:	1
-License:	GPL
+License:	Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	842c7ddf0c160e5c7dd02ae21e13ef9b
@@ -45,6 +49,8 @@ nich.
 %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor
 %{__make}
+
+%{?with_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
