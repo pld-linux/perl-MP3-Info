@@ -3,7 +3,7 @@ Summary:	MP3-Info perl module
 Summary(pl):	Modu³ perla MP3-Info
 Name:		perl-MP3-Info
 Version:	0.91
-Release:	2
+Release:	3
 License:	GPL
 Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl
@@ -12,6 +12,7 @@ Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/MP3/MP3-Info-%{version}.t
 BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRequires:	perl >= 5.6
 Obsoletes:	perl-MPEG-MP3Info
+BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
