@@ -10,7 +10,7 @@ Summary(fr):	Module Perl MP3::Info
 Summary(it):	Modulo di Perl MP3::Info
 Summary(ja):	MP3::Info Perl ¥â¥¸¥å¡¼¥ë
 Summary(ko):	MP3::Info ÆÞ ¸ðÁÙ
-Summary(no):	Perlmodul MP3::Info
+Summary(nb):	Perlmodul MP3::Info
 Summary(pl):	Modu³ Perla MP3::Info
 Summary(pt):	Módulo de Perl MP3::Info
 Summary(pt_BR):	Módulo Perl MP3::Info
