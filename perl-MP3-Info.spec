@@ -1,8 +1,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	MP3
 %define	pnam	Info
-Summary:	MP3-Info perl module
-Summary(pl):	Modu³ perla MP3-Info
+Summary:	MP3::Info perl module
+Summary(pl):	Modu³ perla MP3::Info
 Name:		perl-MP3-Info
 Version:	1.01
 Release:	1
@@ -16,10 +16,10 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-MP3-Info - fetches and manipulates info from MP3 audio files.
+MP3::Info - fetches and manipulates info from MP3 audio files.
 
 %description -l pl
-MP3-Info - wyci±ga i umo¿liwia operowanie na informacjach z plików
+MP3::Info - wyci±ga i umo¿liwia operowanie na informacjach z plików
 MP3.
 
 %prep
