@@ -4,8 +4,8 @@
 Summary:	MP3-Info perl module
 Summary(pl):	Modu³ perla MP3-Info
 Name:		perl-MP3-Info
-Version:	0.91
-Release:	5
+Version:	1.01
+Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
