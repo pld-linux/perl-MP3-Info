@@ -11,8 +11,6 @@ Group(pl):	Programowanie/Jêzyki/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/MP3/MP3-Info-%{version}.tar.gz
 BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRequires:	perl >= 5.6
-%requires_eq	perl
-Requires:	%{perl_sitearch}
 Obsoletes:	perl-MPEG-MP3Info
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
