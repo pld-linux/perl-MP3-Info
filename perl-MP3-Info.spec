@@ -19,8 +19,8 @@ Summary(sv):	MP3::Info Perlmodul
 Summary(uk):	Модуль для Perl MP3::Info
 Summary(zh_CN):	MP3::Info Perl дё©И
 Name:		perl-MP3-Info
-Version:	1.01
-Release:	3
+Version:	1.02
+Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
