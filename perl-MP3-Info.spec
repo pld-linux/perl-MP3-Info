@@ -20,11 +20,11 @@ Summary(uk):	Модуль для Perl MP3::Info
 Summary(zh_CN):	MP3::Info Perl дё©И
 Name:		perl-MP3-Info
 Version:	1.01
-Release:	2
+Release:	3
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	perl >= 5.6
 Obsoletes:	perl-MPEG-MP3Info
 BuildArch:	noarch
@@ -41,7 +41,8 @@ nich.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make}
 
 %install
@@ -58,8 +59,8 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README
-%{perl_sitelib}/MPEG
-%{perl_sitelib}/MP3
+%{perl_vendorlib}/MPEG
+%{perl_vendorlib}/MP3
 %{_mandir}/man3/*
 %dir %{_examplesdir}/%{name}-%{version}
 %attr(755,root,root) %{_examplesdir}/%{name}-%{version}/*
