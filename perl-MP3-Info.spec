@@ -1,12 +1,11 @@
+%include	/usr/lib/rpm/macros.perl
 %define	pdir	MP3
 %define	pnam	Info
-%include	/usr/lib/rpm/macros.perl
 Summary:	MP3-Info perl module
 Summary(pl):	Modu³ perla MP3-Info
 Name:		perl-MP3-Info
 Version:	0.91
-Release:	4
-
+Release:	5
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -24,7 +23,7 @@ MP3-Info - wyci±ga i umo¿liwia operowanie na informacjach z plików
 MP3.
 
 %prep
-%setup -q -n MP3-Info-%{version}
+%setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
 perl Makefile.PL
