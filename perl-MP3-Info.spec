@@ -1,11 +1,26 @@
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	MP3
-%define	pnam	Info
-Summary:	MP3::Info perl module
-Summary(pl):	Modu³ perla MP3::Info
+%define		pdir	MP3
+%define		pnam	Info
+Summary:	MP3::Info Perl module
+Summary(cs):	Modul MP3::Info pro Perl
+Summary(da):	Perlmodul MP3::Info
+Summary(de):	MP3::Info Perl Modul
+Summary(es):	Módulo de Perl MP3::Info
+Summary(fr):	Module Perl MP3::Info
+Summary(it):	Modulo di Perl MP3::Info
+Summary(ja):	MP3::Info Perl ¥â¥¸¥å¡¼¥ë
+Summary(ko):	MP3::Info ÆÞ ¸ðÁÙ
+Summary(no):	Perlmodul MP3::Info
+Summary(pl):	Modu³ Perla MP3::Info
+Summary(pt):	Módulo de Perl MP3::Info
+Summary(pt_BR):	Módulo Perl MP3::Info
+Summary(ru):	íÏÄÕÌØ ÄÌÑ Perl MP3::Info
+Summary(sv):	MP3::Info Perlmodul
+Summary(uk):	íÏÄÕÌØ ÄÌÑ Perl MP3::Info
+Summary(zh_CN):	MP3::Info Perl Ä£¿é
 Name:		perl-MP3-Info
 Version:	1.01
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -19,8 +34,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 MP3::Info - fetches and manipulates info from MP3 audio files.
 
 %description -l pl
-MP3::Info - wyci±ga i umo¿liwia operowanie na informacjach z plików
-MP3.
+MP3::Info - wyci±ga informacje z plików MP3 i umo¿liwia operowanie na
+nich.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
@@ -31,17 +46,20 @@ perl Makefile.PL
 
 %install
 rm -rf $RPM_BUILD_ROOT
+install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 
-gzip -9nf README
+cp -f eg/* $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz eg
-%{perl_sitelib}/MPEG/MP3Info.pm
-%{perl_sitelib}/MP3/Info.pm
+%doc README
+%{perl_sitelib}/MPEG
+%{perl_sitelib}/MP3
 %{_mandir}/man3/*
+%dir %{_examplesdir}/%{name}-%{version}
+%attr(755,root,root) %{_examplesdir}/%{name}-%{version}/*
