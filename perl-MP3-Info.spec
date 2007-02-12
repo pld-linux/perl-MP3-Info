@@ -6,7 +6,7 @@
 %define		pdir	MP3
 %define		pnam	Info
 Summary:	MP3::Info - manipulate / fetch info from MP3 audio files
-Summary(pl):	MP3::Info - odczyt i operowanie na informacjach z plików d¼wiêkowych MP3
+Summary(pl.UTF-8):   MP3::Info - odczyt i operowanie na informacjach z plikÃ³w dÅºwiÄ™kowych MP3
 Name:		perl-MP3-Info
 Version:	1.20
 Release:	1
@@ -24,8 +24,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 MP3::Info Perl module fetches and manipulates info from MP3 audio
 files.
 
-%description -l pl
-Modu³ Perla MP3::Info wyci±ga informacje z plików MP3 i umo¿liwia
+%description -l pl.UTF-8
+ModuÅ‚ Perla MP3::Info wyciÄ…ga informacje z plikÃ³w MP3 i umoÅ¼liwia
 operowanie na nich.
 
 %prep
