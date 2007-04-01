@@ -12,10 +12,11 @@ Version:	1.20
 Release:	1
 License:	Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/MP3/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	ffb3427089a6b5f56e35e5b2ab902d29
-BuildRequires:	rpm-perlprov >= 4.1-13
+URL:		http://search.cpan.org/dist/MP3-Info/
 BuildRequires:	perl-devel >= 1:5.8.0
+BuildRequires:	rpm-perlprov >= 4.1-13
 Obsoletes:	perl-MPEG-MP3Info
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -52,8 +53,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc README
-#%{perl_vendorlib}/MPEG
+%doc Changes README
 %{perl_vendorlib}/MP3
 %{_mandir}/man3/*
 %dir %{_examplesdir}/%{name}-%{version}
