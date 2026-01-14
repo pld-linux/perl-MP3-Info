@@ -8,7 +8,7 @@ Summary:	MP3::Info - manipulate / fetch info from MP3 audio files
 Summary(pl.UTF-8):	MP3::Info - odczyt i operowanie na informacjach z plików dźwiękowych MP3
 Name:		perl-MP3-Info
 Version:	1.24
-Release:	1
+Release:	2
 License:	Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/MP3/%{pdir}-%{pnam}-%{version}.tar.gz
